@@ -1,0 +1,43 @@
+* {
+    font-family: "M PLUS Rounded 1c", serif;
+}
+
+body {
+    margin: 0;
+}
+
+.grid50 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.heroSection {
+    background-color: aqua;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
