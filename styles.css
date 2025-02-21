@@ -1,3 +1,11 @@
+:root {
+    --blue: #0000ff;
+    --lightblue: #4545ff;
+    --black:  #000000;
+    --white: #ffffff;
+    --beige: #79753c59;
+}
+
 * {
     font-family: "M PLUS Rounded 1c", serif;
 }
@@ -7,8 +15,22 @@ body {
 }
 
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav {
+    background-color: var(--beige);
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: var(--lightblue);
 }
 
 .grid50 {
@@ -54,7 +76,7 @@ section {
 }
 
 .heroSection {
-    background-color: aqua;
+    background-color: green;
     margin: auto;
     text-align: center;
     align-content: center;
@@ -72,8 +94,34 @@ li {
     padding: 20px;
 }
 
+button {
+    padding: 10px;
+}
+
+.buttonMain {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+}
+
+.buttonMain:hover {
+    background-color: var(--lightblue);
+}
+
+.buttonSecondary {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.buttonSecondary:hover {
+    background-color: var(--lightblue);
+    color: var(--white);
+    
+}
+
 .card {
-    background-color: beige;
+    background-color: var(--beige);
     margin-top: 50px;
     margin-bottom: 50px;
     min-height: 500px;
@@ -82,7 +130,7 @@ li {
 .cardImg {
     min-height: 100px;
     min-width: 200px;
-    background-color: blue;
+    background-color: var(--blue);
     margin: 0;
 }
 
@@ -92,7 +140,7 @@ li {
 
 .bildeDiv {
     margin-top: 50px;
-    background-color: black;
+    background-color: var(--black);
 }
 .bildeDivText {
     text-align: left;
@@ -101,13 +149,13 @@ li {
 }
 
 .bildeDiv h1 {
-    font-size: 5vw;
+    font-size: 3vw;
     color: white;
 }
 
 footer {
     text-align: center;
-    background-color: gray;
+    background-color: var(--beige);
     margin: 0;
     padding: 50px;
 }
