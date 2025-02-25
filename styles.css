@@ -12,6 +12,7 @@
 
 body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 section {
@@ -42,17 +43,25 @@ h2 {
 }
 
 .grid502525 {
+    max-width: 100%;
+    margin:0px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 5%;
+    align-items: center;
+    padding: 50px 20px;
 }
 
 .grid252550 {
     display: grid;
+    padding: 50px 20px;
+    max-width: 100%;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr;
     gap: 5%;
+    align-items: center;
+    
 }
 
 .flexCenter {
@@ -76,12 +85,24 @@ h2 {
 }
 
 .heroSection {
-    background-color: green;
+    background-image: url(images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
     text-align: center;
     align-content: center;
     height: 100vh;
     padding: 0;
+}
+
+.heroSection h1 {
+    color: white;
+    font-size: 7vw;
+}
+
+.heroSection h3 {
+    color: white;
+    font-size: 5vw;
 }
 
 ul {
@@ -92,6 +113,7 @@ ul {
 
 li {
     padding: 20px;
+    margin: auto;
 }
 
 button {
@@ -122,20 +144,21 @@ button {
 
 .card {
     background-color: var(--beige);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    min-height: 500px;
+    min-height: 400px;
+    text-align: center;
+
 }
 
 .cardImg {
-    min-height: 100px;
-    min-width: 200px;
-    background-color: var(--blue);
+    width:100%;
+    height: 150px;
     margin: 0;
+    object-fit: cover;
 }
 
 .textLeft {
     text-align: left;
+    padding: 30px;
 }
 
 .bildeDiv {
