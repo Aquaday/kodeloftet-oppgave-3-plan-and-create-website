@@ -1,13 +1,19 @@
 :root {
     --blue: #0000ff;
-    --lightblue: #4545ff;
+    --lightblue: #7070ff;
     --black:  #000000;
     --white: #ffffff;
-    --beige: #79753c59;
+    --beige: #79753c;
 }
 
 * {
     font-family: "M PLUS Rounded 1c", serif;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--lightblue);
 }
 
 body {
@@ -21,7 +27,9 @@ section {
 }
 
 nav {
-    background-color: var(--beige);
+    background-color: var(--lightblue);
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -133,6 +141,7 @@ button {
 
 .buttonMain:hover {
     background-color: var(--lightblue);
+    border: 2px solid var(--lightblue);
 }
 
 .buttonSecondary {
@@ -144,14 +153,25 @@ button {
 .buttonSecondary:hover {
     background-color: var(--lightblue);
     color: var(--white);
-    
 }
+
 
 .card {
     background-color: var(--white);
     box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8), 0 15px 40px rgba(86, 86, 86, 0.2);
     min-height: 400px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1 {
+    height: 25px;
+}
+
+.card p {
+    height: 125px;
 }
 
 .cardImg {
