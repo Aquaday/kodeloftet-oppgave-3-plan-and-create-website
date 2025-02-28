@@ -57,3 +57,4 @@ svar3Knapp.addEventListener("click", function() {
         open3 = false
 }
 })
+

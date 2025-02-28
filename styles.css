@@ -1,9 +1,8 @@
 :root {
     --blue: #0000ff;
-    --lightblue: #7070ff;
+    --lightblue: #8484ff;
     --black:  #000000;
     --white: #ffffff;
-    --beige: #79753c;
 }
 
 * {
@@ -247,7 +246,7 @@ button {
 
 footer {
     text-align: center;
-    background-color: var(--beige);
+    background-color: var(--lightblue);
     margin: 0;
     padding: 50px;
 }
