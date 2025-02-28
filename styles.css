@@ -32,15 +32,15 @@ nav {
     top: 0;
 }
 
-/* h1 {
+.headerH1 {
     margin-top: 0px;
 }
 
-h2 {
+.blueH2 {
     padding-bottom: 0px;
     margin-bottom: 0px;
     color: var(--lightblue);
-} */
+} 
 
 .grid50 {
     display: grid;
@@ -250,4 +250,38 @@ footer {
     background-color: var(--beige);
     margin: 0;
     padding: 50px;
+}
+
+@media (max-width:800px) {
+    .grid50 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 4fr;
+    }
+    .grid252550 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .grid252550 card {
+width: 85%;
+    }
+
+    .grid502525 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1441px) {
+    .grid50 {
+        width: 65%;
+        margin: auto;
+    }
+    .grid252550 {
+        width: 65%;
+        margin: auto;
+    }
+    .grid502525 {
+        width: 65%;
+        margin: auto;
+    }
 }
