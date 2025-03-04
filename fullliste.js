@@ -31,10 +31,11 @@ function cycleTur() {
     }
 }
 
+
 cycleTur()
+
+import { darkMode } from "./main.js"
 
 let darkModeButton = document.querySelector("#darkModeButton")
 
 darkModeButton.addEventListener("click", darkMode)
-
-import { darkMode } from "./main.js"

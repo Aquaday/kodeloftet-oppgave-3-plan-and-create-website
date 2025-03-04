@@ -1,6 +1,6 @@
 :root {
     --blue: #0000ff;
-    --lightblue: #8484ff;
+    --lightblue: rgb(190, 182, 255);
     --black:  #000000;
     --white: #ffffff;
 }
@@ -31,6 +31,20 @@ nav {
     background-color: var(--lightblue);
     position: sticky;
     top: 0;
+}
+
+.dropDownContent {
+    display: none;
+}
+
+/* .dropDownButton {
+
+} */
+
+.dropDownSection:hover .dropDownContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }
 
 .headerH1 {
@@ -93,7 +107,7 @@ nav {
 }
 
 .heroSection {
-    backound-image: url(images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
+    background-image: url(images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
