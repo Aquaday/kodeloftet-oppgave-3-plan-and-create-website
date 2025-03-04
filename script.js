@@ -1,5 +1,13 @@
+
+let darkModeButton = document.querySelector("#darkModeButton")
+
+darkModeButton.addEventListener("click", darkMode)
+
+import { darkMode } from "./main.js"
+
+
 // ______________________________________________________Svar1______________
-let svar1Knapp = document.querySelector("#svar1ButtonEl")
+let svar1Knapp = document.querySelector("#svar1ActionEl")
 let svar1 = document.querySelector("#svar1El")
 let svar1Text = document.createElement("p")
 let open1 = false
@@ -19,7 +27,7 @@ svar1Knapp.addEventListener("click", function() {
 })
 
 // ______________________________________________________Svar2______________
-let svar2Knapp = document.querySelector("#svar2ButtonEl")
+let svar2Knapp = document.querySelector("#svar2ActionEl")
 let svar2 = document.querySelector("#svar2El")
 let svar2Text = document.createElement("p")
 let open2 = false
@@ -39,7 +47,7 @@ svar2Knapp.addEventListener("click", function() {
 })
 
 // ______________________________________________________Svar3______________
-let svar3Knapp = document.querySelector("#svar3ButtonEl")
+let svar3Knapp = document.querySelector("#svar3ActionEl")
 let svar3 = document.querySelector("#svar3El")
 let svar3Text = document.createElement("p")
 let open3 = false
@@ -57,4 +65,21 @@ svar3Knapp.addEventListener("click", function() {
         open3 = false
 }
 })
+
+// ____________________________________Submit button form______
+
+let submitKnapp = document.querySelector("#formSubmit")
+let accept = document.querySelector("#formAccept")
+let formAcceptText = document.createElement("p")
+
+submitKnapp.addEventListener("click", function(event) {
+
+    event.preventDefault();
+
+    formAcceptText.textContent = "Takk for hendvendelse! Vi tar kontakt med deg snart."
+
+    accept.appendChild(formAcceptText);
+})
+
+
 
