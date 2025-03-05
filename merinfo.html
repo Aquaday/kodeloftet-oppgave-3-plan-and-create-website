@@ -14,14 +14,17 @@
     <main>
       <nav class="flexSpaceBetween">
         <img src="images/mountains.png" alt="ikon" width="50px" style="padding:10px;">
-        <ul>
-          <li>
-            <button id="darkModeButton">Dark Mode</button>
-          </li>
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="merinfo.html">Mer Info</a></li>
-          <li><a href="fullliste.html">Full Liste</a></li>
-        </ul>
+        <div class="flexRow">
+          <button id="darkModeButton">Dark Mode</button>
+          <div class="dropDownSection">
+            <h1 class="dropDownButton">MENY</h1>
+              <div class="dropDownContent hidden">
+                <a href="index.html">Hjem</a>
+                <a href="merinfo.html">Mer Info</a>
+                <a href="fullliste.html">Full Liste</a>
+              </div>
+         </div>
+       </div></ul>
       </nav>
       <section>
         <h1>Har du noen flere spørsmål?</h1>

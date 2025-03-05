@@ -20,9 +20,17 @@ export {darkMode}
 
 // --------------------------------- Endre Style  --------------------------------------------
 
-let styleDivEl = document.querySelector("#styleContainer")
+let dropDownContent = document.querySelector(".dropDownContent")
+let hidden = true
 
+function dropDownMenu() {
+    if (hidden === false) {
+        dropDownContent.classList.add("hidden")
+        hidden = true
+    } else {
+        dropDownContent.classList.remove("hidden")
+        hidden = false
+    }
+}
 
-// styleDivEl.classList.add("red")
-styleDivEl.style.backgroundColor = "yellow"
-
+export {dropDownMenu}
