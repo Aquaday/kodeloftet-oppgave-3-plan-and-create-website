@@ -17,3 +17,12 @@ function darkMode() {
 }
 
 export {darkMode}
+
+// --------------------------------- Endre Style  --------------------------------------------
+
+let styleDivEl = document.querySelector("#styleContainer")
+
+
+// styleDivEl.classList.add("red")
+styleDivEl.style.backgroundColor = "yellow"
+
