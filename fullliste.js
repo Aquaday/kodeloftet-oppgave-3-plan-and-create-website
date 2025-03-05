@@ -34,18 +34,12 @@ function cycleTur() {
 
 cycleTur()
 
-import { darkMode } from "./main.js"
+import { darkMode, dropDownMenu } from "./main.js"
 
 let darkModeButton = document.querySelector("#darkModeButton")
-
 darkModeButton.addEventListener("click", darkMode)
-
-
 
 let dropDownContent = document.querySelector(".dropDownContent")
 let hidden = true
 let dropDownButton = document.querySelector(".dropDownButton")
-
-import { dropDownMenu } from "./main.js"
-
 dropDownButton.addEventListener("click", dropDownMenu)
