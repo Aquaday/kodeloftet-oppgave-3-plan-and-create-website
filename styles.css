@@ -83,17 +83,7 @@ footer ul {
     padding: 0;
 }
 
-/* ______________________________General classes_____________________________ */
 
-.headerH1 {
-    margin-top: 0px;
-}
-
-.blueH2 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    color: var(--lightblue);
-}
 /* ______________________________Navigation_____________________________ */
 #darkModeButton {
     border: 1px solid var(--black);
@@ -213,6 +203,16 @@ footer ul {
 .textLeft {
     text-align: left;
     padding: 30px;
+}
+
+.headerH1 {
+    margin-top: 0px;
+}
+
+.blueH2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: var(--lightblue);
 }
 
 /* ______________________________Button styles_____________________________ */
