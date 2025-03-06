@@ -1,6 +1,7 @@
 :root {
     --blue: #0000ff;
-    --lightblue: rgb(190, 182, 255);
+    --lightblue: #ADD8E6;
+    --lightbrown: #C4A484;
     --black:  #000000;
     --white: #ffffff;
 }
@@ -28,9 +29,29 @@ section {
 }
 
 nav {
-    background-color: var(--lightblue);
+    background-color: var(--lightbrown);
     position: sticky;
     top: 0;
+}
+
+#darkModeButton {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 2px;
+    height: 75%;
+    margin: auto;
+}
+
+.dropDownButton {
+    border-radius: 10px;
+    padding: 19px 0px;
+    margin: auto;
+}
+
+.dropDownButton:hover {
+    color: white;
 }
 
 .hidden {
@@ -43,7 +64,7 @@ nav {
     flex-direction: column;
     justify-content: flex-end;
     right: 0px;
-    width: 100px;
+    width: 150px;
 }
 .dropDownContent a {
     text-align: right;
@@ -51,6 +72,11 @@ nav {
     background-color: var(--lightblue);
     border: 1px solid var(--lightblue);
     padding: 10px;
+}
+
+.dropDownContent a:hover {
+    border: 1px solid var(--black);
+    background-color: var(--white);
 }
 
 .headerH1 {
@@ -114,7 +140,6 @@ nav {
     gap: 20px;
     margin-right: 20px;
 }
-
 
 .alignCenter {
     text-align: center;
@@ -307,6 +332,9 @@ width: 85%;
     .grid502525 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .grid252550 .textLeft {
+        order: -3;
     }
 }
 
