@@ -141,6 +141,11 @@ nav {
     margin-right: 20px;
 }
 
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 .alignCenter {
     text-align: center;
 }
@@ -248,18 +253,20 @@ button {
 }
 
 .bildeDiv {
-    background-color: var(--black);
+    background-color: black;
+
 }
 
 .bildeDivText {
     text-align: left;
     width: 50%;
-    padding: 50px 0px 50px 150px;
+    padding: 50px 0px 50px 10%;
+
 }
 
 .bildeDiv h1 {
-    font-size: 3vw;
-    color: var(--white);
+    font-size: 4vw;
+    color: white;
 }
 
 .faqDiv {
@@ -307,13 +314,50 @@ button {
     margin-bottom: 20px;
 }
 
+.turSection {
+    width: 50%;
+    margin: auto;
+}
 
+.turArray {
+    border: 2px solid --black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8), 0 15px 40px rgba(86, 86, 86, 0.2);
+    padding: 20px;
+    height: 400px;
+}
+
+.turBildeElement img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.turNavnElement h1 {
+    color: orange;
+}
+
+.turLengdeElement p {
+    color: green;
+}
+
+.cycleTur {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+}
 
 footer {
     text-align: center;
     background-color: var(--lightblue);
     margin: 0;
     padding: 50px;
+}
+
+footer ul {
+    width: 40%;
+    margin: auto;
+    padding: 0;
 }
 
 @media (max-width:800px) {
@@ -326,7 +370,7 @@ footer {
         grid-template-rows: 1fr 1fr 1fr;
     }
     .grid252550 card {
-width: 85%;
+        width: 85%;
     }
 
     .grid502525 {
@@ -334,7 +378,10 @@ width: 85%;
         grid-template-rows: 1fr 1fr 1fr;
     }
     .grid252550 .textLeft {
-        order: -3;
+        order: -1;
+    }
+    footer ul {
+        width: 100%;
     }
 }
 

@@ -1,17 +1,15 @@
 // _____________________-----Info Array-----__________________
 let turNavn = ["Ulriken", "Fløyen", "Skranevatne", "Lyderhorn"]
 let turLengde = ["3 timer", "4 timer", "30 minutter", "5 timer"]
+let turBilde = ["images/floeyen-floeybanen-6.jpg", "images/IJC00170-2.jpg", "images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg"]
 let visTur = 0
 
-let turNavnEl = document.querySelector("#turNavnElement")
-let turNavnText = document.createElement("h1")
-let turLengdeEl = document.querySelector("#turLengdeElement")
-let turLengdeText = document.createElement("p")
+let turNavnEl = document.querySelector(".turNavnElement")
+let turLengdeEl = document.querySelector(".turLengdeElement")
+let turBildeEl = document.querySelector(".turBildeElement")
 
-turNavnEl.appendChild(turNavnText) 
-turLengdeEl.appendChild(turLengdeText)
 
-let cycleButton = document.querySelector("#cycleTur")
+let cycleButton = document.querySelector(".cycleTur")
 cycleButton.addEventListener("click", cycleTur)
 
 function cycleTur() {
@@ -19,14 +17,14 @@ function cycleTur() {
         visTur = 0
         cycleTur()
     } else {
-    turNavnEl.removeChild(turNavnText)
-    turLengdeEl.removeChild(turLengdeText)
 
-    turNavnText.textContent = turNavn[visTur]
-    turLengdeText.textContent = turLengde[visTur]
+    let turBildeNummer = turBilde[visTur]
+    let turNavnNummer = turNavn[visTur]
+    let turLengdeNummer = turLengde[visTur]
 
-    turNavnEl.appendChild(turNavnText)
-    turLengdeEl.appendChild(turLengdeText)
+    turBildeEl.innerHTML = '<img src="'+turBildeNummer+'">'
+    turNavnEl.innerHTML = '<h1>'+turNavnNummer+'</h1>'
+    turLengdeEl.innerHTML = '<p>'+turLengdeNummer+'</p>'
     visTur += 1
     }
 }
