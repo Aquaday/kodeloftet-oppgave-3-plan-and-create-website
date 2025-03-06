@@ -8,7 +8,6 @@ let turNavnEl = document.querySelector(".turNavnElement")
 let turLengdeEl = document.querySelector(".turLengdeElement")
 let turBildeEl = document.querySelector(".turBildeElement")
 
-
 let cycleButton = document.querySelector(".cycleTur")
 cycleButton.addEventListener("click", cycleTur)
 

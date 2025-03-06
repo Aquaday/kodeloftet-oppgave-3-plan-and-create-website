@@ -1,7 +1,14 @@
+/* Er en del detalje settings som eg ikke har gjort helt enda, 
+sikkert lagt inn litt for mye for fristen.
+Mangler også MYE tekst og informasjon og forskjellige bilder, 
+men prioriterte utseende og javascript */
+
+
 :root {
-    --blue: #0000ff;
-    --lightblue: #ADD8E6;
+    --blue: #00008B;
+    --lightblue: #3590F3;
     --lightbrown: #C4A484;
+    --lightgreen: #44CF6C;
     --black:  #000000;
     --white: #ffffff;
 }
@@ -10,6 +17,15 @@
     font-family: "M PLUS Rounded 1c", serif;
     color: var(--black);
 }
+
+p {
+    font-weight: 500;
+}
+
+main {
+    background-color: var(--white);
+}
+
 
 hr {
     width: 100%;
@@ -29,11 +45,53 @@ section {
 }
 
 nav {
-    background-color: var(--lightbrown);
+    background-color: var(--lightblue);
     position: sticky;
     top: 0;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    padding: 10px 20px 10px 10px;
+    margin: auto;
+}
+
+li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--lightblue);
+    margin: 0;
+    padding: 50px;
+}
+
+footer ul {
+    width: 40%;
+    margin: auto;
+    padding: 0;
+}
+
+/* ______________________________General classes_____________________________ */
+
+.headerH1 {
+    margin-top: 0px;
+}
+
+.blueH2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: var(--lightblue);
+}
+/* ______________________________Navigation_____________________________ */
 #darkModeButton {
     border: 1px solid var(--black);
     background-color: var(--black);
@@ -79,16 +137,8 @@ nav {
     background-color: var(--white);
 }
 
-.headerH1 {
-    margin-top: 0px;
-}
-
-.blueH2 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    color: var(--lightblue);
-} 
-
+ 
+/* ______________________________Global classes_____________________________ */
 .grid50 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,11 +171,6 @@ nav {
     text-align: center;
 }
 
-.center {
-    align-items: center;
-    margin: auto;
-}
-
 .flexSpaceBetween {
     display: flex;
     justify-content: space-between;
@@ -146,48 +191,28 @@ nav {
     flex-direction: column;
 }
 
+.center {
+    align-items: center;
+    margin: auto;
+}
+
 .alignCenter {
     text-align: center;
 }
 
-.heroSection {
-    background-image: url(images/irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    height: 100vh;
-    padding: 0;
+.largeImg {
+    width:100%;
+    height: 400px;
+    margin: 0;
+    object-fit: cover;
 }
 
-.heroSection h1 {
-    color: var(--white);
-    font-size: 7vw;
+.textLeft {
+    text-align: left;
+    padding: 30px;
 }
 
-.heroSection h3 {
-    color: var(--white);
-    font-size: 5vw;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-li {
-    padding: 10px 20px 10px 10px;
-    margin: auto;
-}
-
-li a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--black);
-}
-
+/* ______________________________Button styles_____________________________ */
 button {
     padding: 10px;
 }
@@ -214,15 +239,61 @@ button {
     color: var(--white);
 }
 
+/* ______________________________Hero Section_____________________________ */
+.heroSection {
+    background-image: url(images/lower-res-irina-iriser-2Y4dE8sdhlc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
 
+.heroSection h1 {
+    color: white;
+    font-size: 80px;
+    margin-top: 0px;
+    padding: 100px 0px 0px 0px;
+}
+
+.heroSection h3 {
+    color: white;
+    font-size: 30px;
+}
+
+/* ______________________________Bilde section_____________________________ */
+.bildeSection {
+    background-image: url(images/lower-res-john-towner-JgOeRuGD_Y4-unsplash.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bildeSectionText {
+    text-align: left;
+    width: 50%;
+    padding: 50px 0px 50px 10%;
+
+}
+
+.bildeSection h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+/* ______________________________Cards_____________________________ */
 .card {
     background-color: var(--white);
-    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8), 0 15px 40px rgba(86, 86, 86, 0.2);
+    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8),
+                0 15px 40px rgba(86, 86, 86, 0.2);
     min-height: 400px;
+    max-width: 200px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    justify-self: center;
 }
 
 .card h1 {
@@ -240,35 +311,7 @@ button {
     object-fit: cover;
 }
 
-.largeImg {
-    width:100%;
-    height: 400px;
-    margin: 0;
-    object-fit: cover;
-}
-
-.textLeft {
-    text-align: left;
-    padding: 30px;
-}
-
-.bildeDiv {
-    background-color: black;
-
-}
-
-.bildeDivText {
-    text-align: left;
-    width: 50%;
-    padding: 50px 0px 50px 10%;
-
-}
-
-.bildeDiv h1 {
-    font-size: 4vw;
-    color: white;
-}
-
+/* ______________________________FAQ_____________________________ */
 .faqDiv {
     width: 50%;
     margin: auto;
@@ -305,7 +348,7 @@ button {
     border-left: 2px solid var(--black);
     padding: 20px;
 }
-
+/* ______________________________Kontakt Skjema_____________________________ */
 .kontaktSkjema {
     width: 65%;
 }
@@ -313,16 +356,18 @@ button {
 .kontaktSkjema input {
     margin-bottom: 20px;
 }
-
+/* ______________________________Tur array_____________________________ */
 .turSection {
     width: 50%;
     margin: auto;
+    background-color: var(--white);
 }
 
 .turArray {
     border: 2px solid --black;
     border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8), 0 15px 40px rgba(86, 86, 86, 0.2);
+    box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8), 
+                0 15px 40px rgba(86, 86, 86, 0.2);
     padding: 20px;
     height: 400px;
 }
@@ -334,11 +379,11 @@ button {
 }
 
 .turNavnElement h1 {
-    color: orange;
+    color: var(--blue);
 }
 
 .turLengdeElement p {
-    color: green;
+    color: var(--black);
 }
 
 .cycleTur {
@@ -347,20 +392,15 @@ button {
     border-radius: 10px;
 }
 
-footer {
-    text-align: center;
-    background-color: var(--lightblue);
-    margin: 0;
-    padding: 50px;
-}
-
-footer ul {
-    width: 40%;
-    margin: auto;
-    padding: 0;
-}
-
+/* Skulle sikkert laget en til for max-width 425px, for enda mer responsivitet */
 @media (max-width:800px) {
+    .heroSection h1 {
+        font-size: 50px;
+    }
+    .bildeDivText {
+        width: 75%;
+        padding: 20px;
+    }
     .grid50 {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr 4fr;
@@ -372,7 +412,6 @@ footer ul {
     .grid252550 card {
         width: 85%;
     }
-
     .grid502525 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -383,6 +422,13 @@ footer ul {
     footer ul {
         width: 100%;
     }
+    .turArray {
+        height: 500px;
+    }
+    .turBildeElement img {
+        width: 100%;
+    }
+    
 }
 
 @media (min-width:1441px) {
@@ -397,5 +443,12 @@ footer ul {
     .grid502525 {
         width: 65%;
         margin: auto;
+    }
+    .turArray {
+        height: 800px;
+    }
+    .turBildeElement img {
+        height: 500px;
+        width:900px;
     }
 }
