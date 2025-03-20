@@ -90,15 +90,20 @@ footer ul {
     background-color: var(--black);
     color: var(--white);
     border-radius: 10px;
-    padding: 2px;
+    padding: 7px;
     height: 75%;
     margin: auto;
 }
 
+#darkModeButton:hover {
+    cursor: pointer;
+}
+
 .dropDownButton {
     border-radius: 10px;
-    padding: 19px 0px;
+    padding: 19px 40px;
     margin: auto;
+
 }
 
 .dropDownButton:hover {
@@ -291,7 +296,8 @@ button {
     box-shadow: 0 5px 10px rgba(72, 72, 72, 0.8),
                 0 15px 40px rgba(86, 86, 86, 0.2);
     min-height: 400px;
-    max-width: 200px;
+    
+    width: 250px;
     text-align: center;
     display: flex;
     flex-direction: column;
